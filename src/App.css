@@ -1,38 +1,68 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-bar{
+  background-color:cadetblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-item{
+  margin-right: 50px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title{
+  background-color: antiquewhite;
+  margin-top: 0px;
+  padding: 20px;
+}
+.title-name{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.title-slogan{
+  font-size: 15px;
+}
+.question-card{
+  width: 70%;
+  border: 1px solid green;
+  height: 400px;
+  margin: auto;
+  padding: 30px;
+  position: relative;
+  font-size: large;
+}
+.question-description{
+  position: absolute;
+  top:80px;
+  left:5%;
+  right:5%;
+  text-align: left;
+}
+.choices{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.choices{
+  margin-top: 20px;
+  margin-left: 20%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.single-choice{
+  margin-bottom: 10px;
+}
+.choice-label{
+  margin-left: 20px;
+}
+.submit{
+  background-color:aquamarine;
+  width: 100px;
+  text-align: center;
+  margin: auto;
+  font-size: larger;
+  cursor: pointer;
+  display:block
+}
+.result{
+  text-align: center;
 }
